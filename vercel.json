@@ -15,12 +15,6 @@
     { "src": "/v1/whoami", "dest": "/api/whoami.js" },
     { "src": "/v1/wakafetch", "dest": "/api/wakatime.js" },
     { "src": "/v1/sea-of-thieves", "dest": "/api/sea-of-thieves.js" }
-  ],  "redirects": [
-    {
-      "source": "/",
-      "destination": "/v1",
-      "permanent": true
-    }
   ],
   "build": {
     "env": {
