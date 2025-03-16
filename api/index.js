@@ -12,9 +12,25 @@ const handler = async (req, res) => {
   }
 
   res.status(200).send(`
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>v1</title>
+
+    <meta property="og:title" content="v1">
+    <meta property="og:url" content="https://api.sneaky.sh/v1"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="A serverless API hosted on Vercel, allows me to fetch various data for this page and other projects"/>
+
+    <meta name="description" content="A serverless API hosted on Vercel, allows me to fetch various data for this page and other projects"/>
+    <meta name="keywords" content="sneaky, sneakydev, svxy, tnyavnto, hacking, ethical hacking, hacking tutorials, programming, programming tutorials, c++, html, css, javascript, python, web development, software engineering, coding, tech"/>
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
       * {
