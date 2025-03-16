@@ -1,5 +1,5 @@
 module.exports = (req, res) => {
-    const { url } = req;
+    let { url } = req;
 
     if (url.startsWith("/v1")) {
         res.setHeader("Access-Control-Allow-Origin", "*");
@@ -10,8 +10,10 @@ module.exports = (req, res) => {
         return;
     }
 
+    let redirectTo = "/v1" + (url !== "/" ? url : "");
+
     res.writeHead(308, {
-        Location: `/v1${url}`,
+        Location: redirectTo,
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization"
