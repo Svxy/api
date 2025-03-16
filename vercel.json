@@ -1,5 +1,12 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/v1",
+      "permanent": true
+    }
+  ],
   "builds": [
     { "src": "api/index.js", "use": "@vercel/node" },
     { "src": "api/wakatime.js", "use": "@vercel/node" },
