@@ -31,6 +31,14 @@ const handler = async (req, res) => {
     <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-37GBGMW65Q');
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
       * {
@@ -171,6 +179,9 @@ const handler = async (req, res) => {
         <p><a href="https://sneaky.sh" class="back-link">Back to Main Site</a></p>
       </footer>
     </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37GBGMW65Q"></script>
+
   </body>
 </html>
   `);
