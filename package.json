@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "sneaky api",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "author": "sneakydev",
+  "license": "MIT"
+}
